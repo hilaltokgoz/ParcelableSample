@@ -10,8 +10,8 @@ import com.h.dene.databinding.FragmentFirstBinding
 
 
 class FirstFragment : Fragment(R.layout.fragment_first) {
-    private var _binding: FragmentFirstBinding?=null
-    private val binding get()=_binding!!
+    private var _binding: FragmentFirstBinding? = null
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -19,18 +19,13 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         _binding = FragmentFirstBinding.inflate(inflater)
         return binding.root
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         val book = Book("Dune", "Ithaki", "Frank Herbert", 50) //book nesnesi oluşturuldu.
         findNavController().navigate(
             FirstFragmentDirections.actionFirstFragmentToSecondFragment(
                 book
             )
         )
-
-
     }
-
 }

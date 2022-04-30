@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
-
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textViewAuthor"
         android:layout_width="wrap_content"
@@ -34,7 +32,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
     <TextView
         android:id="@+id/textViewPublisher"
         android:layout_width="wrap_content"
@@ -48,7 +45,6 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
-
     <TextView
         android:id="@+id/textViewPrice"
         android:layout_width="wrap_content"
@@ -62,5 +58,4 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPublisher" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
